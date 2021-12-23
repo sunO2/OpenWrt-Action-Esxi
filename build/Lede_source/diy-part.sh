@@ -10,7 +10,7 @@
 
 
 cat >$NETIP <<-EOF
-uci set network.lan.ipaddr='192.168.0.5'                                    # IPv4 地址(openwrt后台地址)
+uci set network.lan.ipaddr='192.168.0.2'                                    # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                                 # IPv4 子网掩码
 uci set network.lan.gateway='192.168.0.1'                                   # IPv4 网关
 uci set network.lan.broadcast='192.168.0.255'                               # IPv4 广播
@@ -61,7 +61,6 @@ rm -rf config.buildinfo
 rm -rf feeds.buildinfo
 rm -rf openwrt-x86-64-generic-kernel.bin
 rm -rf openwrt-x86-64-generic.manifest
-rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
 rm -rf sha256sums
 rm -rf version.buildinfo
 EOF
