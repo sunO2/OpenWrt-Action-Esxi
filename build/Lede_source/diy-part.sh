@@ -7,7 +7,8 @@
 # 如果你的OP是当主路由的话，网关、DNS、广播都不需要，代码前面加 # 注释掉，只保留后台地址和子网掩码就可以
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
-
+# 添加网络过滤插件
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='192.168.0.2'                                    # IPv4 地址(openwrt后台地址)
